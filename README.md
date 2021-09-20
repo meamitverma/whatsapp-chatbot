@@ -1,4 +1,4 @@
-# some important things before you executing-
+# some important things before executing-
 -this chatbot only works for web-whatsapp or desktop whatsapp\
 -make sure the window size is about (1443 x 912)\
 -when you have executed the program dont't move the mouse let the program handle your work.\
