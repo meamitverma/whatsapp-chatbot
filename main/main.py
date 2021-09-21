@@ -22,22 +22,22 @@ def nav_to_image(image, clicks, off_x = 0, off_y = 0):
 
 
 def get_message():
-    nav_to_image('whatsapp-chatbot/images/paperclip.png', 0, off_y=-85)
+    nav_to_image('images/paperclip.png', 0, off_y=-85)
     mouse.click(Button.left, 3)
     pt.rightClick()
 
-    copy = nav_to_image('whatsapp-chatbot/images/copy.png', 1)
+    copy = nav_to_image('images/copy.png', 1)
     sleep(0.5)
 
     return pc.paste() if copy != 0 else 0
 
 def send_message(msg):
-    nav_to_image('whatsapp-chatbot/images/paperclip.png', 2, off_x=100)
+    nav_to_image('images/paperclip.png', 2, off_x=100)
     pt.typewrite(msg, interval=0.05)
     pt.typewrite('\n')
 
 def close_reply_box():
-    nav_to_image('whatsapp-chatbot/images/exit.png', 2)
+    nav_to_image('images/exit.png', 2)
 
 def process_message(msg):
     raw_msg = msg.lower()
@@ -63,7 +63,7 @@ last_message = ''
 sleep(3)
 while True:
     # Check for new messages
-    nav_to_image('whatsapp-chatbot/images/green_circle.png', 2, off_x=-100) #1
+    nav_to_image('images/green_circle.png', 2, off_x=-100) #1
     close_reply_box() #2
 
     message = get_message() #3
